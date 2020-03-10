@@ -1,0 +1,32 @@
+<html> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<body> 
+	<h3>Mileage Prediction App</h3> 
+
+<div class="container-fluid row"> 
+<form action="/predict" method="POST">
+    <div class="form-group col">
+	<label for="BHP">BHP</label> 
+	<input type="text" id="BHP" name="BHP"> btw:[52-322] 
+	</div>
+    <div class="form-group col">
+	<label for="bootspace">Bootspace </label> 
+	<input type="text" id="bootspace" name="bootspace"> btw:[50-160] 
+	</div>
+    <div class="form-group col">
+	<label for="torque">Torque </label> 
+	<input type="text" id="torque" name="torque"> btw:[55-170] 
+	</div>
+    <div class="form-group col"> 
+	<button type="submit" class="btn btn-primary">Submit</button>
+	</div>
+</form> 
+</div> 
+<div class="container-fluid row"> 
+<div class="col-sm"> </div>
+<div id="solution" class="alert alert-info col-sm" role="alert">{{output_text}}</div>
+<div class="col-sm"> </div>
+</div>
+
+</body> 
+</html> 
